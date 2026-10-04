@@ -1,0 +1,5 @@
+.env
+notebooks/
+apps/p.py
+apps/p2.py
+apps/1_qna_bot.py

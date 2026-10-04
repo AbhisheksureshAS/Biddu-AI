@@ -1,0 +1,2 @@
+suppose we want to install everthing at one we simply user
+pip install -r requirement.txt
