@@ -1,5 +1,6 @@
 from dotenv import load_dotenv
 load_dotenv()
+import os
 
 from langchain_community.utilities import GoogleSerperAPIWrapper
 from langchain_groq import ChatGroq
@@ -12,6 +13,7 @@ import streamlit as st
 def get_agent():
     llm = ChatGroq(
         model="openai/gpt-oss-120b",
+        api_key=os.getenv("GROQ_API_KEY"),
         streaming=True
     )
     search = GoogleSerperAPIWrapper()
@@ -25,8 +27,8 @@ def get_agent():
 agent=get_agent()
 
 
-st.title("🤖 AI CHAT BOT")
-st.subheader('FASTer than CHATGPT')
+st.title("🐸 Biddu  AI")
+st.write('Ask Anything and I will answer in Hinglish')
 query=st.chat_input('Ask Anything')
 if 'chat_history' not in st.session_state:
     st.session_state['chat_history']=[]
