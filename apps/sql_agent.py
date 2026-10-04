@@ -1,3 +1,26 @@
+# ignore this file. im just practicing on how to create any agents
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 from dotenv import load_dotenv
 load_dotenv()
 from langchain_groq import ChatGroq
