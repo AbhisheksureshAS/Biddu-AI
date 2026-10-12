@@ -10,7 +10,6 @@ from langchain.agents import create_agent
 from langchain_community.vectorstores import InMemoryVectorStore
 from langgraph.checkpoint.memory import InMemorySaver
 
-st.title('Dr. DocuMind AI')
 
 st.set_page_config(
     page_title="Dr. DocuMind AI",
