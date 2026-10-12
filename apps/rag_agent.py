@@ -133,7 +133,7 @@ if not st.session_state.document_uploaded:
             process_document(path) 
             st.rerun()
 
-st.markdown("# Your documents, understood.")
+st.markdown("Your documents, understood.")
 st.markdown(
     "Ask questions, explore ideas, and find information "
     "inside your uploaded documents."
